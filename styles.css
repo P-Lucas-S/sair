@@ -7,18 +7,27 @@ body {
     margin: 0;
 }
 
-#noButton, #yesButton {
+#noButton {
     position: absolute;
+    left: 50%; /* Centraliza o botão Não */
+    transform: translateX(-100%); /* Move o botão Não para a esquerda */
     transition: 0.5s;
+}
+
+#yesButton {
+    position: absolute;
+    left: 50%; /* Centraliza o botão Sim */
+    transform: translateX(0); /* Move o botão Sim para a direita */
 }
 
 .header_text {
     font-family: 'Nunito';
-    font-size: 2em;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .buttons {
@@ -26,8 +35,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    margin-left: 1em;
+    margin-top: 20px;
 }
 
 .btn {
@@ -48,4 +56,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-left: 90px; */
 }
